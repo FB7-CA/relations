@@ -5,8 +5,7 @@ const UserSchema = new Schema({
     age: Number,
     email: String,
     password: String,
-    books: [{ type: Types.ObjectId, ref: "Book" }],
-    favoriteBook: { type: Types.ObjectId, ref: "Book" }
+    books: [{ type: Types.ObjectId, ref: "Book" }]
 })
 
 const User = model("User", UserSchema)
